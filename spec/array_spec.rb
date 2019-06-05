@@ -97,7 +97,7 @@ describe 'array_practice' do
 
   describe 'average_value' do
     it 'returns the average_value of all integers in array_of_integers' do
-      # expect(average_value([2, 3, 4])).to eq(3), 'average_value did not correctly average_value 2, 3 and 4 to produce 3'
+      expect(average_value([2, 3, 4])).to eq(3), 'average_value did not correctly average_value 2, 3 and 4 to produce 3'
       expect(average_value([1, 2, 3, 4, 5, 6])).to eq(3.5), 'The average value of [1,2,3,4,5,6] should be 4.5, not 4. Make sure to stop Ruby from rounding because we are using integers'
       expect(average_value(array_of_integers_one)).to eq(24.5), 'average_value did not correctly average all array values together. Make sure to stop Ruby from rounding because we are using integers'
       expect(average_value([-5, 5])).to eq(0), 'average_value did not correctly handle a negative number when adding array values'

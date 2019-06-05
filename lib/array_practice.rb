@@ -1,3 +1,4 @@
+require 'pry'
 array_of_integers = *0...50
 
 def all_odds(array)
@@ -48,12 +49,8 @@ def sum(array)
 end
 
 def average_value(array)
-  array = [1.0, 2.0, 3.0]
 
-  total = array.inject(&:+).to_f
-  average = total / 2.0.to_f
-
-
-
+  array.inject(&:+).to_f / array.count.to_f
+  
   # return the average of all integers from the input array
 end
